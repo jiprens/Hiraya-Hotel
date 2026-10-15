@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="rr-style.css">
+    
+    <title>Hiraya Maharlika Suite</title>
+</head>
+<body class="bg">
+
+    <img src="pattern.png" alt="" class="pattern-rooms">
+
+    <nav class="navbar">
+            <a href="#"><img src="logo.png" alt="Hiraya Hotels" class="logo-nav"></a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Amenities</a></li>
+            <li><a href="room-rate.html">Room Rate</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+    <h1 class="title">Hiraya Maharlika Suite</h1>
+
+    <div class="image-slideshow">
+        <img src="room3.png" alt="Hiraya Deluxe Room 1" class="ss-img active">
+        <img src="president2.png" alt="Hiraya Deluxe Room 2" class="ss-img">
+    </div>
+
+    <div class="centering">
+    <p class="description">
+    Discover exceptional luxury in our Hiraya Maharlika Suite, the hotel's most exclusive accommodation. Designed for guests who appreciate space, elegance, and premium comfort, the suite features a spacious bedroom, a separate living area, and refined interiors. Personalized service and upgraded amenities create an elevated hospitality experience, making it ideal for special occasions, executive stays, and guests seeking the finest that Hiraya has to offer.</p>
+    
+        <hr class="line1">
+
+    <p class="highlight">
+        Presidential Suite · Up to 4 Guests · King Bed
+    </p>
+
+    <hr class="line1">
+
+    <div class="amenities">
+        <h2 class="ameni">Amenities</h2>
+
+        <br>
+
+        <ul class="lists">
+            <li>King-sized bed</li> <br>
+            <li>Separate living room</li> <br>
+            <li>Spacious private bathroom</li> <br>
+            <li>Premium toiletries</li> <br>
+            <li>Air-conditioning</li> <br>
+            <li>Complimentary high-speed Wi-Fio</li> <br>
+            <li>Flat-screen television</li>
+            <li>Coffee and tea-making facilities</li> <br>
+            <li>Complimentary breakfast for four</li> <br>
+            <li>Personalized guest assistance</li> <br>
+        </ul>
+    </div>
+
+    <hr class="line1"> 
+
+    <h1 class="others">Others</h1>
+
+    <div class="rooms">
+    <div class="room-2">
+                <img src="room1.png" class="room2">
+                <h1 class="title-room1">Hiraya Deluxe Room</h1>
+                <p class="room-1-desc">A cozy, well-appointed room offering comfort and relaxation for every guest.</p>
+            
+                <div class="room-bottom1">
+                    <h2 class="price01">₱6,500 / Night</h2>
+                    <a href="room1.html" class="det1">View Details</a>
+                </div> 
+            </div>
+
+                <div class="room-3">
+                    <img src="room2.png" class="room2">
+                    <h1 class="title-room1">Hiraya Twin Retreat</h1>
+                    <p class="room-1-desc">A stylish room with two comfortable beds, perfect for friends or traveling companions.</p>
+            
+                    <div class="room-bottom1">
+                        <h2 class="price01">₱7,500 / Night</h2>
+                        <a href="room2.html" class="det1">View Details</a>
+                    </div>
+                </div>
+
+    </div>
+    </div>
+
+<script>
+    const slides = document.querySelectorAll('.ss-img');
+    let current = 0;
+
+    setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;   
+        slides[current].classList.add('active');
+    }, 4000);                                       
+</script>
+
+</body>
+</html>

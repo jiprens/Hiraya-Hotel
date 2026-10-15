@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="rr-style.css">
+    
+    <title>Hiraya Deluxe Room</title>
+</head>
+<body class="bg">
+
+    <img src="pattern.png" alt="" class="pattern-rooms">
+
+    <nav class="navbar">
+            <a href="#"><img src="logo.png" alt="Hiraya Hotels" class="logo-nav"></a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Amenities</a></li>
+            <li><a href="room-rate.html">Room Rate</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+    <h1 class="title">Hiraya Deluxe Room</h1>
+
+    <div class="image-slideshow">
+        <img src="deluxe1.png" alt="Hiraya Deluxe Room 1" class="ss-img active">
+        <img src="deluxe2.png" alt="Hiraya Deluxe Room 2" class="ss-img">
+        <img src="deluxe3.png" alt="Hiraya Deluxe Room 3" class="ss-img">
+    </div>
+
+    <div class="centering">
+    <p class="description">
+    Experience comfort and relaxation in our Hiraya Deluxe Room, thoughtfully designed for guests seeking a peaceful and enjoyable stay. Featuring elegant interiors, a comfortable king-sized bed, and modern conveniences, this room provides a welcoming retreat after a busy day of travel or exploration. Ideal for couples and solo travelers, it combines Filipino hospitality with contemporary comfort.</p>
+    
+        <hr class="line1">
+
+    <p class="highlight">
+        Standard Room · 2 Guests · 1 King Bed
+    </p>
+
+    <hr class="line1">
+
+    <div class="amenities">
+        <h2 class="ameni">Amenities</h2>
+
+        <br>
+
+        <ul class="lists">
+            <li>King-sized bed</li> <br>
+            <li>Air-conditioning</li> <br>
+            <li>Private bathroom with toiletries</li> <br>
+            <li>Complimentary Wi-Fi</li> <br>
+            <li>Flat-screen television</li> <br>
+            <li>Coffee and tea-making facilities</li> <br>
+            <li>Complimentary breakfast for two</li> <br>
+        </ul>
+    </div>
+
+    <hr class="line1"> 
+
+    <h1 class="others">Others</h1>
+
+    <div class="rooms">
+    <div class="room-2">
+                <img src="room2.png" class="room2">
+                <h1 class="title-room1">Hiraya Twin Retreat</h1>
+                <p class="room-1-desc">A stylish room with two comfortable beds, perfect for friends or traveling companions.</p>
+            
+                <div class="room-bottom1">
+                    <h2 class="price01">₱7,500 / Night</h2>
+                    <a href="room2.html" class="det1">View Details</a>
+                </div> 
+            </div>
+
+                <div class="room-3">
+                    <img src="room3.png" class="room2">
+                    <h1 class="title-room1">Hiraya Maharlika Suite</h1>
+                    <p class="room-1-desc">An exclusive suite offering spacious interiors, premium amenities, and exceptional comfort.</p>
+            
+                    <div class="room-bottom1">
+                        <h2 class="price01">₱25,500 / Night</h2>
+                        <a href="room3.html" class="det1">View Details</a>
+                    </div>
+                </div>
+
+    </div>
+    </div>
+
+<script>
+    const slides = document.querySelectorAll('.ss-img');
+    let current = 0;
+
+    setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;   
+        slides[current].classList.add('active');
+    }, 4000);                                       
+</script>
+
+</body>
+</html>
